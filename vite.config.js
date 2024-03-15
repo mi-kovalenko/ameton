@@ -5,7 +5,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: 'modal.html', // Точка входа по умолчанию
+        main: 'index.html', // Точка входа по умолчанию
         delivery: 'modal.html' // Ваша новая страница
       }
     }
