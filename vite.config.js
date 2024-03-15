@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: /ameton/,
+  base: '/ameton/',
   build: {
     rollupOptions: {
       input: {
