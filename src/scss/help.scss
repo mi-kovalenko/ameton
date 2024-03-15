@@ -1,0 +1,51 @@
+.help {
+  width: 100%;
+  max-width: 996px;
+}
+
+.help__heading {
+  font-size: 40px;
+  text-align: center;
+}
+
+.help__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.help__item {
+  margin-bottom: 12px;
+  padding: 20px 24px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.05));                                                      
+}
+
+.help__item-heading {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 20px;
+}
+
+.help__item-text {
+  max-width: 400px;
+  margin: 0;
+  margin-right: 15px;
+  color: #949494;
+  font-size: 13px;
+}
+
+.help__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.help__expand {
+  background-color: transparent;
+  border: none;
+  background-image: url('../img/chevron-grey.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}

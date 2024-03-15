@@ -1,0 +1,48 @@
+@import url('src/scss/fonts.scss');
+@import url('src/scss/support.scss');
+@import url('src/scss/button.scss');
+@import url('src/scss/socials.scss');
+@import url('src/scss/faq.scss');
+@import url('src/scss/help.scss');
+@import url('src/scss/delivery.scss');
+
+:root {
+  --black: #1A1A1A;
+  --green: #36BA5F;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--black);
+  font-family: "Museo Sans", Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  padding: 40px 41px;
+  flex-grow: 1;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (max-width: 800px) {
+    padding: 20px;
+  }
+}
+
+  
+footer {
+  flex-shrink: 0;
+}
+

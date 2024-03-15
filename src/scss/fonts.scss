@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Museo Sans";
+  font-weight: 500;
+  font-style: normal;
+
+  src: url("../fonts/MuseoSansCyrl500.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Museo Sans";
+  font-weight: 700;
+  font-style: bold;
+
+  src: url("../fonts/MuseoSansCyrl700.ttf") format("ttf");
+  font-display: swap;
+}
+
+// @font-face {
+//   font-family: "Museo Sans";
+//   font-weight: 900;
+//   font-style: bolder;
+
+//   src: url("../fonts/MuseoSansCyrl-900.ttf") format("ttf");
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: "MuseoSansCyrl-900";
+  src: url("https://db.onlinewebfonts.com/t/12a98aeede84cc93a1c30d486433c810.eot");
+  src: url("https://db.onlinewebfonts.com/t/12a98aeede84cc93a1c30d486433c810.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/12a98aeede84cc93a1c30d486433c810.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/12a98aeede84cc93a1c30d486433c810.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/12a98aeede84cc93a1c30d486433c810.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/12a98aeede84cc93a1c30d486433c810.svg#MuseoSansCyrl-900")format("svg");
+}

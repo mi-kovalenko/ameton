@@ -1,24 +1,47 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import './style.scss'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
 
-setupCounter(document.querySelector('#counter'))
+
+document.addEventListener("DOMContentLoaded", function() {
+  const galleryContainer = document.querySelector('.faq__gallery-container');
+  const gallery = document.querySelector('.faq__gallery');
+  const cards = document.querySelectorAll('.faq__card');
+  const scrollRightBtn = document.getElementById('scrollRightBtn');
+  const scrollLeftBtn = document.getElementById('scrollLeftBtn');
+  
+  const cardWidth = 282; 
+  const gap = 16; 
+  let currentOffset = 0; // текущее смещение галереи
+  const maxOffset = (cardWidth + gap) * cards.length - galleryContainer.offsetWidth; // максимальное смещение
+  
+  // Изначально кнопка "Назад" не видна
+  scrollLeftBtn.style.display = 'none';
+
+  // Обработчик для кнопки "Вперед"
+  scrollRightBtn.addEventListener('click', function() {
+      if (currentOffset < maxOffset) {
+          currentOffset += cardWidth + gap;
+          gallery.style.transform = `translateX(-${currentOffset}px)`;
+          scrollLeftBtn.style.display = 'block'; // Показываем кнопку "Назад"
+      }
+
+      // Скрываем кнопку "Вперед", если достигнут конец
+      if (currentOffset >= maxOffset) {
+          scrollRightBtn.style.display = 'none';
+      }
+  });
+
+  // Обработчик для кнопки "Назад"
+  scrollLeftBtn.addEventListener('click', function() {
+      if (currentOffset > 0) {
+          currentOffset -= cardWidth + gap;
+          gallery.style.transform = `translateX(-${currentOffset}px)`;
+          scrollRightBtn.style.display = 'block'; // Показываем кнопку "Вперед"
+      }
+
+      // Скрываем кнопку "Назад", если достигнуто начало
+      if (currentOffset <= 0) {
+          scrollLeftBtn.style.display = 'none';
+      }
+  });
+});

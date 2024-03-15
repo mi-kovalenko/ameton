@@ -2,12 +2,151 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link href="https://db.onlinewebfonts.com/c/12a98aeede84cc93a1c30d486433c810?family=MuseoSansCyrl-900" rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
+    <main>
+      <section class="support">
+        <div class="support__container">
+          <h1 class="support__heading">Поддержка здесь</h1>
+          <p class="support__text">Мы любим общаться и рады всем отзывам, вопросам и предложениям. Выберите удобный способ</p>
+          <nav class="support__nav">
+            <a href="modal.html" class="button">
+              <img src="./src/img/chat.svg" width="14" class="button__icon">Онлайн-чат</a>
+            <a href="#" class="button">
+              <img src="./src/img/phone.svg" width="16" class="button__icon">Позвонить</a>
+            </a>
+            <a href="#" class="button">
+              <img src="./src/img/mail.svg" width="16" class="button__icon">Почта</a>
+            </a>
+            <a href="#" class="button">
+              <img src="./src/img/star.svg" width="16" class="button__icon">Отзыв о сайте</a>
+            </a>
+          </nav>
+        </div>
+      </section>
+      <section class="socials">
+        <div>
+          <h2 class="socials__heading">Социальные сети и сообщество</h2>
+          <p class="socials__text">Присоединяйтесь</p>
+        </div>
+        <div class="socials__list">
+          <a class="socials__link">
+            <img src="./src/img/vk.svg" width="25" alt="Вконтакте">
+          </a>
+          <a class="socials__link">
+            <img src="./src/img/insta.svg" width="19" alt="Инстаграм">
+          </a>
+          <a class="socials__link">
+            <img src="./src/img/tiktok.svg" width="18" alt="Тикток">
+          </a>
+          <a class="socials__link">
+            <img src="./src/img/twitter.svg" width="23" alt="Твиттер">
+          </a>
+          <a class="socials__link">
+            <img src="./src/img/zen.svg" width="36" alt="Яндекс Дзен">
+          </a>
+          <a class="socials__link">
+            <img src="./src/img/fb.svg" width="11" alt="Фейсбук">
+          </a>
+        </div>
+      </section>
+      <section class="faq">
+        <h2 class="faq__heading">Часто задаваемые вопросы</h2>
+        <div class="faq__gallery-container">
+          <button id="scrollLeftBtn" class="faq__button faq__button--left"></button>
+          <ul class="faq__gallery">
+            <li class="faq__card">
+              <div class="faq__card-container">
+                <h3 class="faq__question">Где работает доставка?</h3>
+                <p class="faq__answer">Карта лояльности с вашим номером покупателя. Это карта лояльности с вашим</p>
+              </div>
+              <img src="./src/img/bag.svg" width="104">
+            </li>
+            <li class="faq__card">
+              <div>
+                <h3 class="faq__question">Где работает доставка?</h3>
+                <p class="faq__answer">Карта лояльности с вашим номером покупателя. Это карта лояльности с вашим</p>
+              </div>
+            </li>
+            <li class="faq__card">
+              <div>
+                <h3 class="faq__question">Где работает доставка?</h3>
+                <p class="faq__answer">Карта лояльности с вашим номером покупателя. Это карта лояльности с вашим</p>
+              </div>
+            </li>
+            <li class="faq__card">
+              <div>
+                <h3 class="faq__question">Где работает доставка?</h3>
+                <p class="faq__answer">Карта лом номером покупателя. Это карта лояльности с вашим</p>
+              </div>
+              <img src="./src/img/bag.svg" width="104">
+            </li>
+            <li class="faq__card">
+              <div>
+                <h3 class="faq__question">Где работает доставка?</h3>
+                <p class="faq__answer">Карта лояльности с вашим нлояльности с вашим</p>
+              </div>
+            </li>
+            <li class="faq__card">
+              <div>
+                <h3 class="faq__question">Где работает доставка?</h3>
+                <p class="faq__answer">Карта им номером покупателя. Это карта лояльности с вашим</p>
+              </div>
+              <img src="./src/img/bag.svg" width="104">
+            </li>
+            <li class="faq__card">
+              <div>
+                <h3 class="faq__question">Где работает доставка?</h3>
+                <p class="faq__answer">Карта лояльности с вашим номером покупателя. Это карта лояльности с вашим</p>
+              </div>
+            </li>
+            <li class="faq__card">
+              <div>
+                <h3 class="faq__question">Где работает доставка?</h3>
+                <p class="faq__answer">Карта лояльности с вашим номером покупателя. Это карта лояльности с вашим</p>
+              </div>
+            </li>
+
+          </ul>
+          <button id="scrollRightBtn" class="faq__button faq__button--right"></button>
+        </div>
+      </section>
+      <section class="help">
+        <h2 class="help__heading">Справка</h2>
+        <ul class="help__list">
+          <div class="help__item">
+            <div class="help__item-container">
+              <h3 class="help__item-heading">Бережная сборка</h3>
+            </div>
+            <button class="help__expand" aria-label="Показать больше"></button>
+          </div>
+          <div class="help__item">
+            <div class="help__item-container">
+              <h3 class="help__item-heading">Способы доставки и самовывоза</h3>
+              <p class="help__item-text">Это карта лояльности с вашим номером покупат Это карта лояльности с вашим номером покупат</p>
+            </div>
+            <button class="help__expand" aria-label="Показать больше"></button>
+          </div> 
+          <div class="help__item">
+            <div class="help__item-container">
+              <h3 class="help__item-heading">Минимальная сумма заказа</h3>
+            </div>
+            <button class="help__expand" aria-label="Показать больше"></button>
+          </div>
+          <div class="help__item">
+            <div class="help__item-container">
+              <h3 class="help__item-heading">Лёгкий возврат</h3>
+              <p class="help__item-text">Это карта лояльности с вашим номером покупат Это карта лояльности с вашим номером покупат</p>
+            </div>
+            <button class="help__expand" aria-label="Показать больше"></button>
+          </div>
+        </ul>
+      </section>
+    </main>
+    <footer></footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

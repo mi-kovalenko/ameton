@@ -1,0 +1,83 @@
+.faq {
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.faq__heading {
+  margin: 0;
+  margin-bottom: 9px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.faq__gallery-container {
+  position: relative;
+  overflow: hidden;
+  padding: 25px 0;
+  padding-bottom: 26px;
+}
+
+.faq__gallery {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  transition: 0.2s;
+}
+
+.faq__card {
+  display: flex;
+  flex-shrink: 0;
+  width: 282px;
+  height: 160px;
+  // margin-right: 24px;
+  padding: 16px;
+  padding-right: 9px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.05));                                                      
+}
+
+.faq__button {
+  position: absolute;
+  z-index: 100;
+  width: 44px;
+  height: 44px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  border: none;
+  background-image: url('../img/chevron_right.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.05));    
+  
+  &--right{
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &--left {
+    left: 0;
+    bottom: 50%;
+    transform: rotate(180deg) translateY(-50%);
+  }
+}
+
+.faq__question {
+  margin: 0;
+  font-size: 20px;
+}
+
+
+@media (max-width: 1280px) {
+  .faq {
+    width: 80%;
+  }
+
+  .faq__gallery-container {
+    margin: 0 auto;
+  }
+}
